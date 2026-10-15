@@ -20,15 +20,15 @@ export function Navbar() {
             to="/"
             end
             className={({ isActive }) =>
-           `rounded-[9px] px-[1.35rem] py-[0.55rem] text-[0.9rem] leading-[normal] font-bold transition-all duration-200 ease-[ease] ${isActive ? "bg-white text-[#4f46e5] shadow-[0_2px_8px_rgba(15,23,42,0.06)]" : "text-[#64748b]"}`
-          }
+              `rounded-[9px] px-[1.35rem] py-[0.55rem] text-[0.9rem] leading-[normal] font-bold transition-all duration-200 ease-[ease] ${isActive ? "bg-white text-[#4f46e5] shadow-[0_2px_8px_rgba(15,23,42,0.06)]" : "text-[#64748b]"}`
+            }
           >
             Home
           </NavLink>{" "}
           <NavLink
             to="/coins"
             className={({ isActive }) =>
-            `rounded-[9px] px-[1.35rem] py-[0.55rem] text-[0.9rem] leading-[normal] font-bold transition-all duration-200 ease-[ease] ${isActive ? "bg-white text-[#4f46e5] shadow-[0_2px_8px_rgba(15,23,42,0.06)]" : "text-[#64748b]"}`
+              `rounded-[9px] px-[1.35rem] py-[0.55rem] text-[0.9rem] leading-[normal] font-bold transition-all duration-200 ease-[ease] ${isActive ? "bg-white text-[#4f46e5] shadow-[0_2px_8px_rgba(15,23,42,0.06)]" : "text-[#64748b]"}`
             }
           >
             Coins

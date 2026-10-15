@@ -44,9 +44,7 @@ export function MultiCoinChart({ coins }) {
               index === previous.length - 1
                 ? {
                     ...point,
-                    [coin]: Number(
-                      (((price - basePrice) / basePrice) * 100).toFixed(2),
-                    ),
+                    [coin]: ((price - basePrice) / basePrice) * 100,
                     [`${coin}Price`]: price,
                   }
                 : point,
@@ -319,10 +317,11 @@ export function MultiCoinChart({ coins }) {
               key={index}
               cx={cx}
               cy={cy}
-              r={2}
+              r={index === data.length - 1 ? 5 : 2}
               fill={stroke}
               stroke="#ffffff"
               strokeWidth={2}
+              className={index === data.length - 1 ? "animate-pulse" : ""}
             />
           )}
           activeDot={{ r: 6, stroke: "#ffffff", strokeWidth: 2 }}

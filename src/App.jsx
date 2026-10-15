@@ -41,7 +41,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] bg-[radial-gradient(at_10%_0%,rgba(79,70,229,0.05)_0px,transparent_50%),radial-gradient(at_90%_10%,rgba(16,185,129,0.04)_0px,transparent_50%)] font-sans text-[#0f172a]">
+    <div className="flex flex-col min-h-screen bg-[#f8fafc] bg-[radial-gradient(at_10%_0%,rgba(79,70,229,0.05)_0px,transparent_50%),radial-gradient(at_90%_10%,rgba(16,185,129,0.04)_0px,transparent_50%)] font-sans text-[#0f172a]">
       <StaticStrip />
       <Navbar />
       <Routes>
